@@ -1,0 +1,190 @@
+  header {
+      //   background-image: url("../image/bg1\ \(3\).jpg");
+      background-size: cover;
+      width: 100%;
+      height: 95vh;
+      position: relative;
+      color: $header-font-color;
+      //   background-image: linear-gradient(to right, rgba($next-color1, .97), rgba($next-color2, .97)), url('../image/nat4.jpg');
+      //   background-image: linear-gradient(to bottom, #1e1d41f1, #1e1d41fb), url('../image/nat4.jpg');
+      //   background-color: $background;
+      background-image: linear-gradient(to right, rgba($simanto-color1, .97), rgba($simanto-color2, .97)), url('../image/nat4.jpg');
+      background-position: center;
+      background-size: cover;
+      font-size: 16px;
+      clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  }
+  
+  .header-container {
+      width: 100%;
+      height: 7rem;
+      margin: auto;
+      background-color: transparent;
+      display: flex;
+      //   background-color: #0082e6;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .item {
+      display: inline-block;
+      font-weight: 500;
+      padding: 18px 12px 0;
+  }
+  
+  .left {
+      width: 24%;
+      ul {
+          float: left;
+          margin-right: 40px;
+          li {
+              display: inline-block;
+              padding: 18px 12px 0;
+              a {
+                  transition: all .3s ease-in-out;
+                  &:hover .fab {
+                      color: white;
+                      transform: translateY(-3px) scale(1.09);
+                      transition: transform .3s;
+                  }
+              }
+              i {
+                  color: $header-font-color;
+                  font-size: 17px;
+                  transition: .5s;
+              }
+          }
+      }
+  }
+  
+  .btn:link,
+  .btn:visited {
+      padding: 10px 30px;
+      display: inline-block;
+      position: relative;
+      border-radius: 5px;
+      margin-top: 10px;
+      margin-right: 10px;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: none;
+      width: 8rem;
+      height: 3rem;
+      transition: all 0.2s;
+      background-color: $next-color1;
+      color: white;
+      z-index: 4;
+      border: none;
+  }
+  
+  .btn:hover {
+      transform: translateY(-3px);
+  }
+  
+  .btn:active {
+      transform: translateY(-1px);
+      border: none;
+  }
+  
+  .btn::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 5px;
+      background-color: $next-color1;
+      z-index: -1;
+      transition: all .2s;
+  }
+  
+  .btn:hover::after {
+      transform: scaleY(1.4) scaleY(1.6);
+      opacity: 0;
+  }
+  
+  .right {
+      img {
+          padding: 0px 10px 3px 5px;
+          float: left;
+      }
+      ul {
+          float: right;
+          margin-left: 15px;
+          li {
+              position: relative;
+              padding-bottom: .8rem;
+              a {
+                  text-decoration: none;
+                  color: white;
+                  font-size: 17px;
+                  font-weight: 500;
+              }
+          }
+      }
+  }
+  
+  .right ul .item::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 0.17rem;
+      background: white;
+  }
+  
+  .right ul .item::after {
+      transform: scale(0.01);
+      transition: transform .3s ease;
+  }
+  
+  .right ul .item:hover::after {
+      transform: scale(1.1);
+  }
+  
+  .menu {
+      display: none;
+      .fas {
+          color: white;
+          cursor: pointer;
+          font-size: 2.5rem;
+          margin-right: 1rem;
+          transform: translateY(12px);
+      }
+  }
+  
+  .heading-wrap {
+      position: absolute;
+      top: 15rem;
+      left: 10rem;
+      .failure {
+          font-size: 17px;
+          color: #b0b0c2;
+          text-transform: uppercase;
+          letter-spacing: 10px;
+          font-weight: 500;
+          display: inline-flex;
+          animation: failure 1s;
+          animation-delay: 3s;
+      }
+      h1 {
+          font-weight: 800;
+          font-size: 70px;
+          animation: zoom-in 1s;
+          animation-delay: 3s;
+          .color {
+              color: $footer-center-color;
+              font-size: 70px;
+              letter-spacing: normal;
+              font-weight: 800;
+              animation: type 2s steps(7) infinite;
+              border-right: 4px solid white;
+              width: 7ch;
+              overflow: hidden;
+              display: inline-flex;
+          }
+      }
+  }
