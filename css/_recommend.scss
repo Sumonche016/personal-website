@@ -10,9 +10,10 @@
              font-size: 50px;
              display: inline-block;
              font-weight: 600;
-             background-image: linear-gradient(to bottom, $simanto-color1, #f80776);
+             background-image: linear-gradient(to top, black, #ffffff);
              -webkit-background-clip: text;
              color: transparent;
+             font-family: 'Itim', cursive;
          }
      }
      @media screen and (max-width:600px) {
@@ -31,11 +32,12 @@
      margin: 0 auto;
      padding: 4rem 2.5rem 4rem 5rem;
      background-color: white;
-     box-shadow: 5px 5px 17px 5px rgba(0, 0, 0, 0.33);
      border-radius: 3px;
      transition: all .5s;
      transform: skewX(-12deg);
      margin-bottom: 4rem;
+     backface-visibility: hidden;
+     transition: all .5s;
      &>* {
          transform: skewX(12deg);
      }
@@ -73,7 +75,7 @@
              font-weight: 500;
              margin-bottom: 1rem;
              font-size: 18px;
-             color: #4b0e38;
+             color: black;
          }
      }
      &__caption {

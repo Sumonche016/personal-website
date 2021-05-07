@@ -1,5 +1,4 @@
-    @import url('https://fonts.googleapis.com/css2?family=Poppins+Zen+Dots:wght@300;400;500;600;700;800;900&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Zen+Dots&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins+Zen+Dots+Itim:wght@300;400;500;600;700;800;900&display=swap');
     @import "__variables.scss";
     @import "__service.scss";
     @import "__media.scss";
@@ -24,7 +23,8 @@
     
     .main {
         transition: opacity .1s ease-in;
-        opacity: 1;
+        opacity: 0;
+        transition: opacity .5s;
     }
     
     .loader {

@@ -8,9 +8,10 @@
             font-size: 50px;
             display: inline-block;
             font-weight: 600;
-            background-image: linear-gradient(to bottom, $simanto-color1, $footer-center-color);
+            background-image: linear-gradient(to top, black, #ffffff);
             -webkit-background-clip: text;
             color: transparent;
+            font-family: 'Itim', cursive;
         }
     }
     &__container {
@@ -116,17 +117,25 @@
                     height: 4rem;
                     cursor: pointer;
                     text-align: center;
-                    border-radius: 50%;
                     border: 1px solid #ddd;
                     list-style: none;
                     position: relative;
-                    background-image: linear-gradient(to bottom, $simanto-color1, $simanto-color2);
+                    transition: all .5s;
+                    &:hover {
+                        background-color: black;
+                    }
+                    &:hover {
+                        transform: scale(1.01) translateY(-5px);
+                    }
+                    &:hover li a {
+                        color: white;
+                    }
                     li {
                         @include center;
                         position: absolute;
                         font-size: 16px;
                         a {
-                            color: white;
+                            color: black;
                             font-size: 19px;
                         }
                     }

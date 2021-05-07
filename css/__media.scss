@@ -1,45 +1,38 @@
 @media only screen and (max-width:70rem) {
-    .right {
-        ul {
-            display: none;
-        }
-    }
-    .left {
-        display: none;
-        .menu {
-            display: none;
-        }
-        .btn:link {
-            display: none;
-        }
-    }
     header {
-        .heading-wrap {
-            position: absolute;
-            top: 10rem;
-            left: 1.2rem;
-            .failure {
-                font-size: 10px;
-                letter-spacing: 5px;
-                color: $para-color;
-                text-transform: uppercase;
-                font-weight: 500;
+        .header-container {
+            .right {
+                ul {
+                    display: none;
+                }
             }
-            h1 {
-                font-weight: 800;
-                font-size: 30px;
-                .color {
-                    color: #E8523A;
-                    font-size: 35px;
-                    letter-spacing: normal;
-                    font-weight: 600;
+            .left {
+                display: none;
+                .menu {
+                    display: none;
+                }
+                .btn:link {
+                    display: none;
+                }
+            }
+        }
+        .heading-wrap {
+            display: block;
+        }
+        .header-animation {
+            display: none;
+            .wrapper {
+                margin-top: 3rem;
+                padding: 0;
+                .dynamic-txts {
+                    margin-left: 20px;
                 }
             }
         }
     }
     .about {
         padding: 0;
-        padding-top: 7rem;
+        padding-top: 6rem;
         .about-container {
             flex-direction: column;
             width: 100%;
@@ -91,7 +84,7 @@
             .story {
                 width: 85%;
                 transform: skewX(0);
-                height: 21rem;
+                height: 24rem;
                 margin: 2rem auto;
                 padding: 2rem;
                 &>* {
